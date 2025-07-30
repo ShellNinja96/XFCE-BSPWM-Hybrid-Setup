@@ -143,9 +143,7 @@ sudo apt update
 # =========================================================================================================================================================== #
 
     echo "Installing Papirus Icons (Indigo Folders)..."
-    sudo cp ./Resources/papirus-icon-theme-indigo-folders/Papirus /usr/share/icons
-    sudo cp ./Resources/papirus-icon-theme-indigo-folders/Papirus-Dark /usr/share/icons
-    sudo cp ./Resources/papirus-icon-theme-indigo-folders/Papirus-Light /usr/share/icons
+    sudo cp -r ./Resources/papirus-icon-theme-indigo-folders/* /usr/share/icons
     xfconf-query -c xsettings -p /Net/IconThemeName -t string -s "Papirus-Dark" --create
 
 # =========================================================================================================================================================== #
