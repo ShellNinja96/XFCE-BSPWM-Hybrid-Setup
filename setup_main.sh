@@ -26,7 +26,7 @@ sudo apt update
     xfconf-query -c xfce4-panel -p /panels/panel-1/length-adjust -t bool -s false --create; sleep 1
     xfconf-query -c xfce4-panel -p /panels/panel-1/length -t int -s 50 --create; sleep 1
     xfconf-query -c xfce4-panel -p /panels/panel-1/size -t int -s 28 --create; sleep 1
-    xfconf-query -c xfce4-panel -p /panels/panel-1/position -t string -s "p=0;x=553;y=26" --create; sleep 1
+    xfconf-query -c xfce4-panel -p /panels/panel-1/position -t string -s "p=0;x=548;y=25" --create; sleep 1
     xfconf-query -c xfce4-panel -p /panels/panel-1/position-locked -t bool -s true --create; sleep 1
     xfconf-query -c xfce4-panel -p /panels/panel-1/background-style -t int -s 1 --create; sleep 1
     xfconf-query -c xfce4-panel -p /panels/panel-1/background-rgba -t double -s 0 -t double -s 0 -t double -s 0 -t double -s 0 --create; sleep 1
