@@ -154,6 +154,10 @@ sudo apt update
     sudo mkdir -p /usr/share/fonts/truetype/JetBrainsMonoNerdFont
     sudo cp ./Resources/JetBrainsMonoNerdFont/*.ttf /usr/share/fonts/truetype/JetBrainsMonoNerdFont/
 
+    echo "Setting up JetBrainsMono Nerd Fonts..."
+    xfconf-query -c xsettings -p /Gtk/FontName -t string -s "JetBrainsMono Nerd Font 10" --create
+    xfconf-query -c xsettings -p /Gtk/MonospaceFontName -t string -s "JetBrainsMono Nerd Font 10" --create
+
 # =========================================================================================================================================================== #
 # === 11 - KITTY ============================================================================================================================================ #
 # =========================================================================================================================================================== #
