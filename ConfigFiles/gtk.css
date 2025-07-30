@@ -1,0 +1,6 @@
+.-vala-panel-appmenu-core scrolledwindow,
+.-vala-panel-appmenu-private > menuitem,
+.-vala-panel-appmenu-private > menuitem:first-child > label {
+  color: #CDD6F4;
+  background-color: transparent;
+}
