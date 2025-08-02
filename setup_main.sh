@@ -131,11 +131,7 @@ sudo apt update
     sudo cp -r ./Resources/Future-cyan-cursors/ /usr/share/icons/
 
     echo "Setting up Future Cyan Cursors..."
-    sudo mkdir -p /usr/share/icons/default
-    sudo bash -c 'cat > /usr/share/icons/default/index.theme << EOF
-    [Icon Theme]
-    Inherits=Future-cyan-cursors
-    EOF'
+    sudo sed -i 's/^Inherits=.*/Inherits=Future-cyan-cursors/' /usr/share/icons/default/index.theme
     xfconf-query -c xsettings -p /Gtk/CursorThemeName -t string -s "Future-cyan-cursors" --create
     
 # =========================================================================================================================================================== #
