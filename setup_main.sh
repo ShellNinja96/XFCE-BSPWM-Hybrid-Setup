@@ -192,14 +192,14 @@ sudo apt update
     echo "Setting up lightdm-gtk-greeter..."
     sudo cp ./ConfigFiles/lightdm-gtk-greeter.css /etc/lightdm/lightdm-gtk-greeter.css
     sudo cp ./Resources/astronaut.png /etc/lightdm/astronaut.png
-    sudo printf '@import url("/etc/lightdm/lightdm-gtk-greeter.css")' >> /usr/share/themes/catppuccin-mocha-pink-standard+default/gtk-3.0/gtk.css
-    sudo printf 'background=/etc/lightdm/astronaut.png' >> /etc/lightdm/lightdm-gtk-greeter.conf
-    sudo printf 'user-background=false' >> /etc/lightdm/lightdm-gtk-greeter.conf
-    sudo printf 'theme-name=catppuccin-mocha-pink-standard+default' >> /etc/lightdm/lightdm-gtk-greeter.conf
-    sudo printf 'icon-theme-name=Papirus-Dark' >> /etc/lightdm/lightdm-gtk-greeter.conf
-    sudo printf 'font-name=JetBrainsMono Nerd Font Mono 10' >> /etc/lightdm/lightdm-gtk-greeter.conf
-    sudo printf 'position=63% 43%' >> /etc/lightdm/lightdm-gtk-greeter.conf
-    sudo printf 'hide-user-image=true' >> /etc/lightdm/lightdm-gtk-greeter.conf
+    printf '@import url("/etc/lightdm/lightdm-gtk-greeter.css")\n' | sudo tee -a /usr/share/themes/catppuccin-mocha-pink-standard+default/gtk-3.0/gtk.css
+    printf 'background=/etc/lightdm/astronaut.png\n' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
+    printf 'user-background=false\n' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
+    printf 'theme-name=catppuccin-mocha-pink-standard+default\n' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
+    printf 'icon-theme-name=Papirus-Dark\n' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
+    printf 'font-name=JetBrainsMono Nerd Font Mono 10\n' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
+    printf 'position=63% 43%\n' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
+    printf 'hide-user-image=true\n' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
 
 
 # =========================================================================================================================================================== #
