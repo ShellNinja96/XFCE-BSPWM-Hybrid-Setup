@@ -186,7 +186,24 @@ sudo apt update
     cp ./ConfigFiles/polybar.config.ini ~/.config/polybar/config.ini
 
 # =========================================================================================================================================================== #
-# === 13 - REBOOT =========================================================================================================================================== #
+# === 13 - LIGHTDM GREETER ================================================================================================================================== #
+# =========================================================================================================================================================== #
+    
+    echo "Setting up lightdm-gtk-greeter..."
+    sudo cp ./ConfigFiles/lightdm-gtk-greeter.css /etc/lightdm/lightdm-gtk-greeter.css
+    sudo cp ./Resources/astronaut.png /etc/lightdm/astronaut.png
+    sudo printf '@import url("/etc/lightdm/lightdm-gtk-greeter.css")' >> /usr/share/themes/catppuccin-mocha-pink-standard+default/gtk-3.0/gtk.css
+    sudo printf 'background=/etc/lightdm/astronaut.png' >> /etc/lightdm/lightdm-gtk-greeter.conf
+    sudo printf 'user-background=false' >> /etc/lightdm/lightdm-gtk-greeter.conf
+    sudo printf 'theme-name=catppuccin-mocha-pink-standard+default' >> /etc/lightdm/lightdm-gtk-greeter.conf
+    sudo printf 'icon-theme-name=Papirus-Dark' >> /etc/lightdm/lightdm-gtk-greeter.conf
+    sudo printf 'font-name=JetBrainsMono Nerd Font Mono 10' >> /etc/lightdm/lightdm-gtk-greeter.conf
+    sudo printf 'position=63% 43%' >> /etc/lightdm/lightdm-gtk-greeter.conf
+    sudo printf 'hide-user-image=true' >> /etc/lightdm/lightdm-gtk-greeter.conf
+
+
+# =========================================================================================================================================================== #
+# === 14 - REBOOT =========================================================================================================================================== #
 # =========================================================================================================================================================== #
     
     read -p "A reboot is required (and advised) in order to complete the setup, press enter to reboot now."
