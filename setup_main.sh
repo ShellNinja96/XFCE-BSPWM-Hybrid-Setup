@@ -192,8 +192,8 @@ sudo apt update
     printf 'font-name=JetBrainsMono Nerd Font Mono 10\n' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
     printf 'position=63%% 43%%\n' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
     printf 'hide-user-image=true\n' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
-    printf 'indicators=~session;~spacer;~clock;~spacer;~power' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
-    printf 'clock-format=%A, %-d of %B %Y - %H:%M' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
+    printf 'indicators=~session;~spacer;~clock;~spacer;~power\n' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
+    printf 'clock-format=%%A, %%-d of %%B %%Y - %%H:%%M\n' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf
 
 
 # =========================================================================================================================================================== #
