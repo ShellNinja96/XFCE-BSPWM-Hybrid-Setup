@@ -7,8 +7,8 @@ super + @space
     rofi -show drun
 
 # xfce4 session logout
-super + Espace
-    xfce4-session-logout
+super + Escape
+    rofi-powermenu
 
 # quit/restart bspwm
 super + alt + {q,r}
