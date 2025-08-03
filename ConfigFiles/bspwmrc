@@ -17,4 +17,4 @@ xfce4-panel &
 Thunar --daemon &
 nitrogen --restore &
 sleep 5
-xborder --border-rgba "#F5C2E7DD" --border-width 4 --border-mode center --border-radius 12 --disable-version-warning &
+xborder --border-rgba "#F5C2E7DD" --border-width 3 --border-mode center --border-radius 12 --disable-version-warning &
