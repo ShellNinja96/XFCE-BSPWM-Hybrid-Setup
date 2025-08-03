@@ -98,7 +98,7 @@ sudo apt update
     cp ./ConfigFiles/rofi.catppuccin-default.rasi ~/.config/rofi/catppuccin-default.rasi
     chmod +x ./Resources/setup_rofi.sh
     ./Resources/setup_rofi.sh
-    sudo cp ./Resources/rofi_powermenu.sh /usr/local/bin/rofi-powermenu
+    sudo cp ./Resources/rofi-powermenu.sh /usr/local/bin/rofi-powermenu
     sudo chmod +x /usr/local/bin/rofi-powermenu
 
 # =========================================================================================================================================================== #
